@@ -141,6 +141,35 @@ def GeneBank():
 	        name, sequence = fasta.id, str(fasta.seq)
 	        new_sequence = some_function(sequence)
 	        write_fasta(out_file)	
+def Exit():
+
+	print '''
+
+ /$$$$$$$$ /$$   /$$  /$$$$$$  /$$   /$$ /$$   /$$       /$$     /$$ /$$$$$$  /$$   /$$
+|__  $$__/| $$  | $$ /$$__  $$| $$$ | $$| $$  /$$/      |  $$   /$$//$$__  $$| $$  | $$
+   | $$   | $$  | $$| $$  \ $$| $$$$| $$| $$ /$$/        \  $$ /$$/| $$  \ $$| $$  | $$
+   | $$   | $$$$$$$$| $$$$$$$$| $$ $$ $$| $$$$$/          \  $$$$/ | $$  | $$| $$  | $$
+   | $$   | $$__  $$| $$__  $$| $$  $$$$| $$  $$           \  $$/  | $$  | $$| $$  | $$
+   | $$   | $$  | $$| $$  | $$| $$\  $$$| $$\  $$           | $$   | $$  | $$| $$  | $$
+   | $$   | $$  | $$| $$  | $$| $$ \  $$| $$ \  $$          | $$   |  $$$$$$/|  $$$$$$/
+   |__/   |__/  |__/|__/  |__/|__/  \__/|__/  \__/          |__/    \______/  \______/ 
+
+ 						{ THANK YPU FOR USING BIOINFORMATICS LAZY SCRIPT } 
+---------------------------------------------------------------------------------------
+
+	Author     Mohammed Banyamer
+    Name       BIO-JO 'BIOINFORMATICS LAZYSCRIPT'
+    CodeName   NASHMI01
+    version    Trial version
+    Date       16/12/2019 09:35:12
+    Team       N4SHMI-JO
+    Email      Mohammed.banyamer@firstinfosec.com
+    Instagram  @mbani3amer
+    Phone      +962781008061/+96894849593 
+     
+* CONTACT ME IF YOU FIND ERRORS OR TO GIVE ME FEEDBACK		  
+
+'''	        
 
 
 def maiMenu():
@@ -152,6 +181,10 @@ def maiMenu():
 	print("6. Transcription ")
 	print("7. Translation Tables ")
 	print("8. Sequnce length  ")
+	print("8. GC Contanet ")
+	print("8. Conver Files ")
+	print("8. Generate Fasta ")
+	print("8. Generate GeneBank ")
 	print("9. About ")
 	print("10. Exit ")
 	selection=int(input("\n Bio01>>"))
@@ -175,7 +208,10 @@ def maiMenu():
 	elif selection==9:
 		program_info()
 		maiMenu()
-					
+	elif selection==10:
+		Exit()
+	
+
 maiMenu()
 
 
